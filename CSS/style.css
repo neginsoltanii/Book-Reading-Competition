@@ -1,0 +1,130 @@
+@charset "UTF-8";
+:root{
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --light-color: #f3f3f3;
+    --btn-color: #198d8d;
+    --max-width: 1100px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    direction: rtl;
+    line-height: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* SignUp Form */
+.form{
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.form .container{
+    background-color: var(--light-color);
+    padding: 15px 25px;
+}
+
+.form .container h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+#signup-form .form-group label{
+    display: block;
+    color: #333;
+}
+
+.form .form-group input{
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+
+
+#signup-form .form-group .is-required:after{
+    content: '*';
+}
+
+.form .container .btn{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--btn-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+}
+
+.form .container .btn:hover{
+    background-color: #339999; 
+}
+
+.form .bottom-text{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.form .bottom-text a{
+    color: #333;
+    margin-right: 2px;
+    font-size: 13px;
+    color: rgb(41, 41, 179);
+    font-weight: bold;
+}
+
+.form .bottom-text a:hover{
+    color: rgb(218, 143, 6);
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: var(--secondary-color);
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px;
+}
+
